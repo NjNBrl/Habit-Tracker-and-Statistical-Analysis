@@ -1,5 +1,7 @@
 import matplotlib.pyplot as plt
 import json
+import os
+os.makedirs("statistics", exist_ok=True)
 with open("task_tracker.json","r") as file:
     data = json.load(file)
 
