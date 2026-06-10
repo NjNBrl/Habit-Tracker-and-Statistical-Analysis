@@ -3,7 +3,7 @@ from collections import Counter
 import matplotlib.pyplot as plt
 import os
 from PIL import Image, ImageDraw, ImageFont
-
+os.makedirs("statistics", exist_ok=True)
 # ---------- Load Data ----------
 with open("task_tracker.json", "r") as file:
     data = json.load(file)
